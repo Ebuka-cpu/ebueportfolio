@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core'
+    'core',
+    # 'storages',
 ]
 
 MIDDLEWARE = [
@@ -138,3 +139,13 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
 
 
 django_heroku.settings(locals())
+
+
+"""AWS_ACCESS_KEY_ID = 'AKIARYYDX6L7YMT76RVO'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'ebue-portfolio'
+
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage' """
